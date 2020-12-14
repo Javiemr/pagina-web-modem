@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Landing Page de clase</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascripts/funciones.js"></script>
+
+</head>
+<body>
+   <!-- pongo una flecha arriba con position fixed para volver arriba
+        en el estilo ver en el layout general -->
+   <a href="#hero"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+    <div id="container">
+        <nav>
+         <div class="topnav" id="myTopnav">
+            <a href="#hero" class="active">Inicio</a>
+            <a href="#intro">Introducción</a>
+            <a href="#funcionamiento">Funcionamiento</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#contacto">Contacta</a>
+            <a href="#donde">Instalación, donde, precios y marcas</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+        <section id="hero">
+         <h2>Módem</h2>
+        </section>
+        <section id="intro">
+           <p>Un módem se trata de un dispositivo que convierte señales digitales en analógicas, gracias a esto permite la comunicación entre ordenadores. El módem se encarga de enviar la señal moduladora mediante otra señala llamada portadora.</p>
+        </section>
+        
+        <section id="funcionamiento">
+          
+                <img src="imagenes/ondas.png" id="ondas">
+                
+            <p><br>El modulador emite una señal portadora, generalmente se trata de una señal eléctrica sinusoidal de mayor frecuencia que la moduladora, la moduladora constituye la información para una transmisión. La moduladora modifica alguna característica de la portadora que incluye la información de la moduladora.
+               <onmouseclick href="https://www.ecured.cu/M%C3%B3dem#:~:text=5%20V%C3%A9ase%20tambi%C3%A9n-,Funcionamiento,emite%20una%20se%C3%B1al%20denominada%20portadora." target="_blank">Visita ecured para mas información</a> </p>
+            <p><br>Así el demodulador puede recuperar la señal moduladora original quitando la portadora, las características de la portadora son:</p>
+            <p><br>- Amplitud, que origina una modulación de la aplitud.<br> - Frecuencia, que origina una modulación de la frecuencia. <br> - Fase, que origina una modulación de fase.</p>
+        </section>
+      
+        <section id="tipos" class="grid2col">
+           <div class="col2" id="dcha">
+                <div class="iframe-responsive"><!-- necesario para responsividad del iframe interior-->
+                  <iframe class="iframe-content" src="https://www.youtube.com/embed/6gdpp8M4hog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+                </div>
+           </div>
+           <div class="col2" id="dcha">
+            Tipos
+
+            Existen módems para PC y módems telefónicos
+            <br>
+            Módems PC
+            Existen módems internos y módems exernos aunque también han aparecido los módems software. Existen los XDSL y RDSI que se usa para conectarse a través de cable coaxial de 75 ohms.
+            Los internos consisten en una tarjeta de expansión que compone los módem, existen numerosos tipos de conector. <br> <br>
+            
+            Bus ISA que debido a la baja velocidad de estos, hoy en dia está obsoleto. <br> <br>
+            Bus PCI es el formato mas común que está en uso. <br> <br>
+            AMR: También obsoleto por su rendimiento, se encuentra en algunas placas. <br> <br>
+            
+            Los externos al ordenador tienen la ventaja de la portabilidad entre ordenadores y se puede saber el estado del módem, aun así ocupan mas espacio que los internos <br> 
+            Módems telefónicos
+            El uso de estos mas común es el de transmisiones de datos por via telefónica. <br> Mientras los pc’s procesan datos de forma digital, las líneas telefónicas solo transmiten señales analógicas.
+            Mientras que existen numerosos tipos de conexión
+            Pueden ser mediante uno de los puertos serie, a través de módems de PC Card que se usaba en portátiles antes de la llegada del USB.
+            Existen modelos USB y por software. <br>
+            También existen los módem completo cuya velocidad depende exclusivamente de la del módem y de la UART del ordenador en vez de la del microprocesador.
+           </div>
+        </section>
+        <!-- section con grid a 3 columnas -->
+        <section id="contacto" class="grid3col">
+           <div class="col3">
+            Los módems son probablemente el periférico mas importante en la actualidad, debido a la gran cantidad de información que se usa hoy en dia, por ello el traspaso de información de ordenadores de manera rápida y totalmente global es necesario 
+            
+       
+           </div>
+        </section>
+        <h2>
+         Instalación, donde, precios y marcas
+      </h2>
+        <section id="donde" class="grid4col">
+           
+           <div class="col4">
+              <img src="imagenes/amazon.jpg" alt="">
+              <p>Se puede encontrar opciones de compra en Amazon junto a Pccomponentes y otras páginas de segunda manos  </p>
+              <button onclick="window.location.href='https://www.amazon.es/modems/b?ie=UTF8&node=937968031'">Enlace a amazon</button>
+           </div>
+           <div class="col4">
+               <img src="imagenes/modeminstallar.jpg" alt="">
+            <p>La instalación es sencilla, se trata de conectar el módem a la corriente y una vez esté conectado, simplemente hace falta conectar los cables coaxiales y cables ethernet  los dipositivos que se van a usar.</p>
+            <button onclick="window.location.href='https://es.wikihow.com/instalar-un-m%C3%B3dem'">Enlace tutorial de wikihow</button>
+           </div>
+           <div class="col4">
+            <img src="imagenes/pc world.jpg" alt="">
+            <p>Huawei, Cisco, Linksys, Netgear, Asus son de las marcas de módem mejor valoradas según algunas paginas</p>
+            <button onclick="window.location.href='https://www.pcworld.es/mejores-productos/hogar-digital/los-mejores-router-wifi-de-2019-3690879'">Mejores marcas según pcworld</button>
+           </div>
+           
+        </section>
+        <section></section>
+        
+        <footer class="grid3col">
+           <div class="col3">
+              <h3>Contáctanos:</h3>
+              <p>C/ San francisco nº4<br>
+                 Cártama - Málaga</p>
+              <p>Teléfono: 618 42 13 46</p>
+              <p>Email: javiemr0@gmail.com</p>
+           </div>
+           <div class="col3">
+            <h3>Contenido:</h3>
+            <a href="#hero" class="active">Inicio</a><br>
+            <a href="#intro">Introduccion</a><br>
+            <a href="#funcionamiento">funcionamiento</a><br>
+            <a href="#tipos">Tipos</a></p>
+            <a href="#contacto">Contacta</a><br>
+            
+           </div>
+           <!-- redes sociales -->
+           <div class="col3">
+            <h3>Redes Sociales:</h3>
+            <a href="https://twitter.com/javiermrno" class="fa fa-twitter"></a>
+            <a href="https://github.com/Javiemr" class="fa fa-github"></a>
+           </div>
+           
+
+        </footer>
+    </div>
+
+    
+</body>
+</html>
